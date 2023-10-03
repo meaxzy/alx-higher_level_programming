@@ -6,3 +6,5 @@ def print_last_digit(number):
     if i < 0:
         i = -i
     print("{}".format(i), end='')
+
+    return i
