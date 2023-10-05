@@ -1,8 +1,12 @@
 #!/usr/bin/python3
 def add(a, b):
-    a = 1
-    b = 2
+    result = a + b
+    return result
 
-    result = add(a, b)
 
-    print("{} + {} = {}".format(a, b, result), end='')
+a = 1
+b = 2
+
+result = add(a, b)
+
+print("{} + {} = {}".format(a, b, result), end='')
