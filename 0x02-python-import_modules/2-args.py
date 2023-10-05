@@ -7,8 +7,6 @@ if __name__ == "__main__":
         print("0 argument(s).")
     else:
         if num_args > 1:
-            print("1 argument:")
-        else:
-            print("{} argument(s): ".format(num_args))
+            print("{} argument(s): ".format(num_args), end='')
         for i in range(1, num_args + 1):
             print("{}: {}".format(i, sys.arg[i]))
