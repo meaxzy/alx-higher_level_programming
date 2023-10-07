@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for num in my_list:
-    print("{}".format(num))
+def element_at(my_list, idx):
+    for num in range(len(my_list)):
+        print("{}".format(my_list(num)))
