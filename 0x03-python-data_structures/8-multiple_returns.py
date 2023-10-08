@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     for i in range(len(sentence)):
-        if i == " ":
+        if sentence[i] == "":
             return None
         else:
-            return i, len(sentence[0])
-
+            return (sentence[i], sentence[0])
