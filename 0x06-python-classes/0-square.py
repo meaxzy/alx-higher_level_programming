@@ -1,6 +1,4 @@
 #!/usr/bin/python3
+""" This is a Class Square """
 class Square:
-    """
-    This is a Square Class
-    """
     pass
