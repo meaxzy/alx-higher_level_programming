@@ -1,38 +1,40 @@
 #!/usr/bin/python3
-''' Defines a class named Square '''
+"""Defines a class named square with private instance"""
 
 
 class Square:
-    ''' class named Square '''
-
+    """Contains a private instance attribute"""
     def __init__(self, size=0):
-        ''' Initiales a new square with a size '''
+        """Method to initialize size"""
         self.__size = size
 
     @property
     def size(self):
-        ''' getter method '''
+        """Getter method for size"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        ''' setter method '''
-
-        if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+        """Setter for size"""
+        if type(value) is not int:
+            print("size must be an integer", end="")
+            raise TypeError
         elif value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
+            print("size must be >= 0", end="")
+            raise ValueError
+        else:
+            self.__size = value
 
     def area(self):
-        ''' Return the area of a square '''
-        return(self.__size * self.__size)
+        """Method to return area of square"""
+        return (self.__size ** 2)
 
     def my_print(self):
-        ''' Prints a square with the character # '''
-        if self.__size == 0:
-            print("")
-        for x in range(self.__size):
-            for y in range(self.__size):
-                print("#", end="")
+        """prints the square using #"""
+        if self.__size != 0:
+            for i in range(self.__size):
+                for j in range(self.__size):
+                    print("#", end='')
+                print()
+        else:
             print()
