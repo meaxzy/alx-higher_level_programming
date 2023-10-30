@@ -58,11 +58,11 @@ class Rectangle:
         rectangle_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                rectangle_str += '#'
-            if i < self.__height - 1:
-                rectangle_str += '\n'
+                rectangle_str = rectangle_str + '#'
+            if i != (self.__height - 1):
+                rectangle_str = rectangle_str + '\n'
         return rectangle_str
 
     def __repr__(self):
         """ Custom representation of the object """
-        return f"Rectangle({self.__width}, {self.__height})"
+        return "Rectangle({}, {})".format(self.__width, self.__height)
