@@ -3,6 +3,7 @@
 
 """A class that defines a rectangle."""
 class Rectangle:
+    """A class that defines the height and width """
     def __init__(self, width=0, height=0):
         """ Initialize private attributes for width and height """
         self.__width = 0
