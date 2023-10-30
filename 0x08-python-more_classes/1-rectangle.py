@@ -8,10 +8,6 @@ class Rectangle:
         """ Initialize private attributes for width and height """
         self.__width = width
         self.__height = height
-       
-        """ Call the property setters to validate and set the width and height """
-        self.width = width
-        self.height = height
 
     @property
     def width(self):
@@ -21,7 +17,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """ Setter method for width attribute """
-        if type(value) is not int:
+        if not isinstance(value, int):
             """ Check if the input is an integer, raise an exception if not """
             raise TypeError("width must be an integer")
         if value < 0:
@@ -37,7 +33,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """ Setter method for height attribute """
-        if type(value) is not int:
+        if not isinstance(value, int):
             """ Check if the input is an integer, raise an exception if not """
             raise TypeError("height must be an integer")
         if value < 0:
