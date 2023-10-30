@@ -54,7 +54,7 @@ class Rectangle:
     def __str__(self):
         """ Custom string representation of the rectangle """
         if self.__width == 0 or self.__height == 0:
-            return ("")
+            return ''
         rectangle_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
@@ -62,7 +62,3 @@ class Rectangle:
             if i != (self.__height - 1):
                 rectangle_str = rectangle_str + '\n'
         return rectangle_str
-
-    def __repr__(self):
-        """ Custom representation of the object """
-        return "Rectangle({}, {})".format(self.__width, self.__height)
