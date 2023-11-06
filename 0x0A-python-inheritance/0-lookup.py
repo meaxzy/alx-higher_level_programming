@@ -1,14 +1,7 @@
 #!/usr/bin/python3
-"""list of available attributes and methods of an object"""
+""" Lookup attributes and methods """
 
 
 def lookup(obj):
-     """Return a list of available attributes and methods of an object"""
-     
-     class MyClass1(object):
-         pass
-
-     class MyClass2(object):
-         my_attr1 = 3
-         def my_meth(self):
-             pass
+    """Return a list of available attributes and methods of an object."""
+    return dir(obj)
