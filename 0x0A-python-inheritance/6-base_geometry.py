@@ -13,4 +13,4 @@ class BaseGeometry:
         """
     try:
         print(BaseGeometry().area())
-    except Exception("area() is not implemented")
+    raise Exception ("area() is not implemented")
