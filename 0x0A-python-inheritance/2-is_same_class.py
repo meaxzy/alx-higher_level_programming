@@ -2,9 +2,11 @@
 
 
 """ Check instance of the object if same """
+
+
 def is_same_class(obj, a_class):
     """
-    Returns True if the object is exactly an instance of the specified class; otherwise, False.
+    True if the object is exactly an instance, otherwise, False.
 
     Args:
         obj: The object to check.
