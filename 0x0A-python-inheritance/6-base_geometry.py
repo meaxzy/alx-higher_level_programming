@@ -11,6 +11,4 @@ class BaseGeometry:
         Calculate the area (not implemented).
 
         """
-    try:
-        print(BaseGeometry().area())
     raise Exception ("area() is not implemented")
