@@ -23,9 +23,8 @@ class BaseGeometry:
 
 class Rectangle(BaseGeometry):
     """inherits from BaseGeometry
-    "
+    """
     def __init__(self, width, height):
-        """ Validate width and height using the integer_validator method """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         """ Set private attributes"""
