@@ -12,4 +12,4 @@ def inherits_from(obj, a_class):
         a_class: The class to compare inheritance with.
 
     """
-    return isinstance(obj, a_class) and type(obj) =! a_class
+    return isinstance(obj, a_class) and (type(obj) =! a_class)
