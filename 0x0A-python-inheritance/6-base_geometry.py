@@ -6,9 +6,5 @@ class BaseGeometry:
     """ Defining class with atrributes and methods """
 
     def area(self):
-
-        """
-        Calculate the area (not implemented).
-
-        """
-        raise Exception ("area() is not implemented")
+        """Calculate the area (not implemented)."""
+        raise Exception("area() is not implemented")
